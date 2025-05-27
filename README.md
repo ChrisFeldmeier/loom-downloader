@@ -1,6 +1,6 @@
 # 🎬 Loom Video Downloader
 
-Ein leistungsstarker Node.js Command-Line-Tool zum Herunterladen von Videos von loom.com mit Audio-Video-Synchronisation**.
+Ein leistungsstarker Node.js Command-Line-Tool zum Herunterladen von Videos von loom.com mit Audio-Video-Sequenzen.
 
 ## ✨ Features
 
