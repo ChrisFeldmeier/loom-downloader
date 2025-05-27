@@ -1,0 +1,33 @@
+{
+  "name": "loom-dl",
+  "version": "1.0.0",
+  "description": "Loom Video Downloader.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisFeldmeier/loom-downloader"
+  },
+  "main": "loom-dl.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "loom-dl": "./loom-dl.js"
+  },
+  "author": "ECOMGRADUATES LLC",
+  "license": "MIT",
+  "keywords": [
+    "loom",
+    "loom downloader",
+    "loom video download",
+    "bulk downloader",
+    "loom bulk download"
+  ],
+  "dependencies": {
+    "axios": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "yargs": "^17.7.2"
+  }
+}
