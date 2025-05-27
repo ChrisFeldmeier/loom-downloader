@@ -1040,20 +1040,11 @@ const downloadWithSeparateStreams = async (videoUrl, outputPath) => {
           console.log(`✅ Successfully combined video and audio!`);
           console.log(`🎬 Combined file: ${combinedOutput}`);
           
-                     // Optionally clean up separate files
-           console.log('🧹 Cleaning up separate files...');
-           try {
-             if (fs.existsSync(videoOutput)) {
-               fs.unlinkSync(videoOutput);
-               console.log(`🗑️  Removed: ${videoOutput}`);
-             }
-             if (fs.existsSync(audioOutput)) {
-               fs.unlinkSync(audioOutput);
-               console.log(`🗑️  Removed: ${audioOutput}`);
-             }
-           } catch (cleanupError) {
-             console.log(`⚠️  Warning: Could not clean up temp files: ${cleanupError.message}`);
-           }
+          // Keep separate files for user reference
+          console.log('📁 Separate files preserved:');
+          console.log(`📹 Video file: ${videoOutput}`);
+          console.log(`🔊 Audio file: ${audioOutput}`);
+          console.log(`🎬 Combined file: ${combinedOutput}`);
           
           resolve();
         } else {

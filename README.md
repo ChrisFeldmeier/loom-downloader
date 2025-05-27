@@ -166,3 +166,45 @@ Video: setpts=PTS-STARTPTS
 Audio: asetpts=PTS-STARTPTS + aresample=async=1:min_hard_comp=0.1:first_pts=0
 Kombination: libx264 (CRF 18) + AAC (128kbps)
 ```
+
+## 📁 Ausgabedateien
+
+Das Tool erstellt drei Dateien pro Download:
+- **`video_name_video.mp4`** - Nur Video-Stream (wird aufbewahrt)
+- **`video_name_audio.mp4`** - Nur Audio-Stream (wird aufbewahrt)  
+- **`video_name_combined.mp4`** - Kombinierte Datei mit perfekter Synchronisation
+
+## 🤝 Beitragen
+
+Beiträge sind willkommen! Für größere Änderungen öffnen Sie bitte zuerst ein Issue.
+
+### Entwicklung
+```bash
+git clone https://github.com/ChrisFeldmeier/loom-downloader.git
+cd loom-downloader
+npm install
+```
+
+### Tests
+```bash
+# Einzelnes Video testen
+node loom-dl.js --url "https://www.loom.com/share/TEST_VIDEO_ID" --out "test.mp4"
+```
+
+## 📄 Lizenz
+
+Dieses Projekt ist Open Source und unter der [MIT License](https://choosealicense.com/licenses/mit/) verfügbar.
+
+## 🆘 Support
+
+Bei Problemen oder Fragen:
+1. Überprüfen Sie die [Issues](https://github.com/ChrisFeldmeier/loom-downloader/issues)
+2. Erstellen Sie ein neues Issue mit:
+   - Loom-Video-URL (falls möglich)
+   - Fehlermeldung
+   - Betriebssystem und Node.js-Version
+   - Installierte Tools (yt-dlp, ffmpeg)
+
+---
+
+**🎬 Perfekte Loom-Videos mit Audio-Video-Sequenzen!**
